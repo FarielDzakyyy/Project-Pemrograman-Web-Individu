@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Formulir Biodata</title>
+</head>
+
+<body>
+     <h1>Formulir Biodata</h1>
+     <form action="#" method="post" enctype="multipart/form-data">
+          <div>
+               <label for="nama">Nama Lengkap:</label>
+               <input type="text" id="nama" name="nama" required>
+          </div>
+          <br><br>
+          <div>
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+          </div>
+          <br><br>
+          <div>
+               <label for="password">Password:</label>
+               <input type="password" id="password" name="password" required>
+          </div>
+          <br><br>
+          <div>
+               <label for="umur">Umur:</label>
+               <input type="number" id="umur" name="umur" min="1" max="120" required>
+          </div>
+          <br><br>
+          <div>
+               <label for="tanggal_lahir">Tanggal Lahir:</label>
+               <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+          </div>
+          <br><br>
+          <div>
+               <label for="warna">Warna Favorit:</label>
+               <input type="color" id="warna" name="warna" value="#ff0000">
+          </div>
+          <br><br>
+          <div>
+               <label for="foto">Upload Foto Profil:</label>
+               <input type="file" id="foto" name="foto" accept="image/*">
+          </div>
+          <br><br>
+          <div>
+               <label>Jenis Kelamin:</label>
+               <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+               <label for="laki">Laki-laki</label>
+               <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+               <label for="perempuan">Perempuan</label>
+          </div>
+          <br><br>
+          <div>
+               <label>Hobi:</label>
+               <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+               <label for="membaca">Membaca</label>
+               <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
+               <label for="traveling">Traveling</label>
+               <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+               <label for="olahraga">Olahraga</label>
+          </div>
+          <br><br>
+          <div>
+               <label for="negara">Pilihan Negara:</label>
+               <select id="negara" name="negara" required>
+                    <option value="">-- Pilih Negara --</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Indonesia">Indonesia</option>
+               </select>
+          </div>
+          <br><br>
+          <div>
+               <label for="biografi">Biografi Singkat:</label>
+               <br>
+               <textarea id="biografi" name="biografi" rows="4" cols="50"></textarea>
+          </div>
+          <br><br>
+          <div>
+               <button type="submit">Submit</button>
+               <button type="reset">Reset</button>
+          </div>
+     </form>
+</body>
+
+</html>
